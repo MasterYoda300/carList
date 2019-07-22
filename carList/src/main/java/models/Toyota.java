@@ -9,7 +9,7 @@ package models;
  *
  * @author pc
  */
-public class Car {
+public class Toyota {
     int idCar;
     String manufacturer;
     String model;
@@ -19,7 +19,7 @@ public class Car {
     double engine;
     int HorsePower;
 
-    public Car(int idCar, String manufacturer, String model, int year, String type, double fueleconomy, double engine, int HorsePower) {
+    public Toyota(int idCar, String manufacturer, String model, int year, String type, double fueleconomy, double engine, int HorsePower) {
         this.idCar = idCar;
         this.manufacturer = manufacturer;
         this.model = model;

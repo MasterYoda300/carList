@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : 22-07-2019, 14:32:21
+    Document   : Vw
+    Created on : 22-07-2019, 19:16:04
     Author     : pc
 --%>
 
@@ -13,7 +13,5 @@
     </head>
     <body>
         <h1>Hello World!</h1>
-            <a href="Toyota.jsp">Toyota</a>
-            <a href="VW.jsp">volkswagen</a>
     </body>
 </html>

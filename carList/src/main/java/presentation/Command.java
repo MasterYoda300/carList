@@ -10,10 +10,10 @@ abstract class Command {
 
     private static void initCommands() {
         commands = new HashMap<>();
-
-       // commands.put("login", new LoginCommand());
-       // commands.put("shop", new ShopCommand());
-        //commands.put("character", new CharacterCommand());
+        commands.put ("Toyota", new ToyotaCommand());
+        commands.put("VW", new VWCommand());
+       
+       
        
 
     }
