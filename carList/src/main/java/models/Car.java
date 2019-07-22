@@ -17,8 +17,9 @@ public class Car {
     String type;
     double fueleconomy;
     double engine;
+    int HorsePower;
 
-    public Car(int idCar, String manufacturer, String model, int year, String type, double fueleconomy, double engine) {
+    public Car(int idCar, String manufacturer, String model, int year, String type, double fueleconomy, double engine, int HorsePower) {
         this.idCar = idCar;
         this.manufacturer = manufacturer;
         this.model = model;
@@ -26,6 +27,7 @@ public class Car {
         this.type = type;
         this.fueleconomy = fueleconomy;
         this.engine = engine;
+        this.HorsePower = HorsePower;
     }
 
     public int getIdCar() {
@@ -82,6 +84,14 @@ public class Car {
 
     public void setEngine(double engine) {
         this.engine = engine;
+    }
+
+    public int getHorsePower() {
+        return HorsePower;
+    }
+
+    public void setHorsePower(int HorsePower) {
+        this.HorsePower = HorsePower;
     }
 
 }
