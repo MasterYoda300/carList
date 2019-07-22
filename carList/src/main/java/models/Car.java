@@ -11,6 +11,8 @@ package models;
  */
 public class Car {
     int idCar;
+    String manufacturer;
+    String model;
     int year;
     String type;
     double fueleconomy;
