@@ -13,7 +13,7 @@ import java.sql.SQLException;
  *
  * @author pc
  */
-public class connector {
+public class Connector {
     private static final String URL = "jdbc:mysql://68.183.66.133:3306/carList?UseSSL=false";
     private static final String USERNAME = "car";
     private static final String PASSWORD = "ocRIx1qn9bM2UqrK";

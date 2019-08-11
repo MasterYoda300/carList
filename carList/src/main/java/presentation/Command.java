@@ -12,6 +12,9 @@ abstract class Command {
         commands = new HashMap<>();
         commands.put ("Toyota", new ToyotaCommand());
         commands.put("VW", new VWCommand());
+         commands.put("Logout", new LogoutCommand());
+        commands.put("login", new LoginCommand());
+        commands.put("register", new RegisterCommand());
        
        
        
@@ -19,6 +22,13 @@ abstract class Command {
     }
 
   
+static Command from(HttpServletRequest request) {
+        String commandName = request.getParameter("command");
+        if (commands == null) {
+            initCommands();
+        }
+        return commands.getOrDefault(commandName, new UnknownCommand());
+    }
 
     abstract String execute(HttpServletRequest request, HttpServletResponse response)
             throws Exception;
